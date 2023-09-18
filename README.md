@@ -15,3 +15,10 @@ poetry install
 poetry run python app.py
 ```
 
+## Demo
+
+The Flask up is running on GCP Cloud Run at https://midicleaner.pixelatedpoets.com/
+
+## License
+
+The source code is donated to the public domain
