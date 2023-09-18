@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MIDI Cleaner - Remove unknown events from MIDI Files</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="canonical" href="https://midicleaner.pixelatedpoets.com/">
+    <meta property="og:url" content="https://midicleaner.pixelatedpoets.com/">
+    <meta name="description" content="The MIDI cleaner is a tool developed by the Pixelated Poets, an AI Fusion band. It removes unknown MIDI events from MIDI files.">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "MIDI Cleaner",
+            "url": "https://midicleaner.pixelatedpoets.com"
+        }
+    </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.min.css') }}">
+</head>
+
+<body class="font-monospace">
+    <div class="container-fluid py-4 py-xl-5">
+        <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2>MIDI Cleaner</h2>
+                <p class="w-lg-50">Remove unknown MIDI events from MIDI files. A tool brought to you by the <a href="https://youtube.com/@PixelatedPoets/" target="_new">Pixelated Poets</a>.</p>
+            </div>
+        </div>
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+            <div class="col-md-12 col-xl-12">
+              <div><a href="https://pixelatedpoets.com/" target="_new"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="{{ url_for('static', filename='images/pixelated-poets-band-member.jpg') }}"></a>
+                    <center>
+                      <div class="py-4">
+                          <h4>Select MIDI File to be cleaned</h4>
+                          <form method=post enctype=multipart/form-data>
+                            <input type=file name=file>
+                            <input type=submit value=Upload>
+                          </form>
+                      </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
