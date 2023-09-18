@@ -17,7 +17,7 @@ poetry run python app.py
 
 ## Demo
 
-The Flask up is running on GCP Cloud Run at [midicleaner.pixelatedpoets.com](https://midicleaner.pixelatedpoets.com/)
+The demo site is running on GCP Cloud Run at [midicleaner.pixelatedpoets.com](https://midicleaner.pixelatedpoets.com/)
 
 ## License
 
